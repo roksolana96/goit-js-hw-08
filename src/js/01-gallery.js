@@ -36,9 +36,10 @@ function onImageClick(event){
         return;
     }
 
-    var lightbox = new SimpleLightbox('.gallery a', { captionDelay: 250});
-
 };
+
+let lightbox = new SimpleLightbox('.gallery a', { captionDelay: 250});
+
 
 
 // Change code below this line
