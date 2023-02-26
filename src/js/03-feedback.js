@@ -30,7 +30,7 @@ function onFormSubmit (event){
       });
 
     if (email.value === '' || textarea.value === '') {
-        alert('Warning! All fields are not filled!');  
+       return alert('Warning! All fields are not filled!');  
     };
 
     localStorage.removeItem('feedback-form-state');
