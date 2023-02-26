@@ -24,15 +24,15 @@ function onTextInput (event){
 function onFormSubmit (event){
     event.preventDefault();
 
+    if (email.value === '' || textarea.value === '') {
+        return alert('Warning! All fields are not filled!');   
+    };
+
     console.log({
         email: email.value,
         message: textarea.value,
       });
-
-    if (email.value === '' || textarea.value === '') {
-       return alert('Warning! All fields are not filled!');  
-    };
-
+    
     localStorage.removeItem('feedback-form-state');
     event.currentTarget.reset();
 
