@@ -24,7 +24,7 @@ function onTextInput (event){
 function onFormSubmit (event){
     event.preventDefault();
 
-    if (email.value === '' || textarea.value === '') {
+    if (email.value.trim() === '' || textarea.value.trim() === '') {
         return alert('Warning! All fields are not filled!');   
     };
 
