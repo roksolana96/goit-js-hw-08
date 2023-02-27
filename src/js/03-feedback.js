@@ -29,8 +29,8 @@ function onFormSubmit (event){
     };
 
     console.log({
-        email: email.value,
-        message: textarea.value,
+        email: email.value.trim(),
+        message: textarea.value.trim(),
       });
     
     localStorage.removeItem('feedback-form-state');
